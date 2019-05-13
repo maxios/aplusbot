@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/maxios/stealth.git
-  revision: d90c394a0b16f05de343d3a24d620abe22879717
+  revision: 7ada6790c12e37511b74b2388752100d7e7876bd
   branch: master
   specs:
     stealth (1.1.4)
