@@ -1,3 +1,25 @@
+GIT
+  remote: https://github.com/maxios/stealth-facebook.git
+  revision: 84d938467c4766efcd1579aff17fd97feda33159
+  branch: master
+  specs:
+    stealth-facebook (0.13.1)
+      faraday (~> 0.13)
+      stealth (< 2.0)
+
+GIT
+  remote: https://github.com/maxios/stealth.git
+  revision: d90c394a0b16f05de343d3a24d620abe22879717
+  branch: master
+  specs:
+    stealth (1.1.4)
+      activesupport (~> 5.2)
+      multi_json (~> 1.12)
+      puma (~> 3.10)
+      sidekiq (~> 5.0)
+      sinatra (~> 2.0)
+      thor (~> 0.20)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -46,7 +68,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    multipart-post (2.1.0)
+    multipart-post (2.1.1)
     mustermann (1.0.3)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
@@ -80,16 +102,6 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.5)
       tilt (~> 2.0)
-    stealth (1.1.6)
-      activesupport (~> 5.2)
-      multi_json (~> 1.12)
-      puma (~> 3.10)
-      sidekiq (~> 5.0)
-      sinatra (~> 2.0)
-      thor (~> 0.20)
-    stealth-facebook (0.13.1)
-      faraday (~> 0.13)
-      stealth (< 2.0)
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
@@ -104,8 +116,8 @@ DEPENDENCIES
   foreman
   pg
   railties (~> 5.2)
-  stealth (~> 1.0)
-  stealth-facebook
+  stealth (~> 1.0)!
+  stealth-facebook!
 
 BUNDLED WITH
    1.16.6
