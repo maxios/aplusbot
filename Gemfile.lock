@@ -1,16 +1,12 @@
-GIT
-  remote: https://github.com/maxios/stealth-facebook.git
-  revision: 84d938467c4766efcd1579aff17fd97feda33159
-  branch: master
+PATH
+  remote: /home/maxios/repo/stealth-facebook
   specs:
     stealth-facebook (0.13.1)
       faraday (~> 0.13)
       stealth (< 2.0)
 
-GIT
-  remote: https://github.com/maxios/stealth.git
-  revision: 7ada6790c12e37511b74b2388752100d7e7876bd
-  branch: master
+PATH
+  remote: /home/maxios/repo/stealth
   specs:
     stealth (1.1.4)
       activesupport (~> 5.2)
@@ -116,7 +112,7 @@ DEPENDENCIES
   foreman
   pg
   railties (~> 5.2)
-  stealth (~> 1.0)!
+  stealth!
   stealth-facebook!
 
 BUNDLED WITH
