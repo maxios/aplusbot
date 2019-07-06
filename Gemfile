@@ -13,8 +13,5 @@ gem 'pg'
 
 # Uncomment to enable the Stealth Twilio SMS Driver
 # gem 'stealth-twilio'
-
-group :development do
-  gem 'byebug'
-  gem 'foreman'
-end
+gem 'foreman'
+gem 'byebug'
