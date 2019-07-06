@@ -15,7 +15,7 @@ default: &default
 
 development:
   <<: *default
-  database: 'bot_development'
+  database: 'aplus_development'
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -25,3 +25,4 @@ test:
 
 production:
   <<: *default
+  database: 'aplus_production'
