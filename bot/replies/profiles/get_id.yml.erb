@@ -16,7 +16,7 @@
       image_url: "https://my-app.com/app-image.png"
       default_action:
         - type: url
-          url: "https://sleepy-dusk-92280.herokuapp.com/lists/new"
+          url: <%= ENV['APLUS_EXTENSION_URL'] %>
           title: 'view'
           text: 'view'
           webview_height_ratio : 'tall'
