@@ -104,6 +104,9 @@ GEM
     tilt (2.0.9)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uniqueness (1.1.0)
+      activerecord (>= 4.0.0)
+      railties (>= 4.0.0)
 
 PLATFORMS
   ruby
@@ -116,6 +119,7 @@ DEPENDENCIES
   railties (~> 5.2)
   stealth!
   stealth-facebook!
+  uniqueness (~> 1.1.0)
 
 BUNDLED WITH
    1.16.6
