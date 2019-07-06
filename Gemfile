@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'stealth'
-gem 'stealth-facebook'
+gem 'stealth', git: 'https://github.com/maxios/stealth.git', branch: 'master'
+gem 'stealth-facebook', git: 'https://github.com/maxios/stealth-facebook.git', branch: 'master'
 gem 'activerecord', '~> 5.2'
 
 gem 'railties', '~> 5.2'

@@ -1,12 +1,16 @@
-PATH
-  remote: /home/maxios/repo/stealth-facebook
+GIT
+  remote: https://github.com/maxios/stealth-facebook.git
+  revision: fee6833c6a500b0c630fc29a0be6eb23e74c82ce
+  branch: master
   specs:
     stealth-facebook (0.13.1)
       faraday (~> 0.13)
       stealth (< 2.0)
 
-PATH
-  remote: /home/maxios/repo/stealth
+GIT
+  remote: https://github.com/maxios/stealth.git
+  revision: 1383fe7fe9fce58f6055038bc2e40cf5d47d4d46
+  branch: master
   specs:
     stealth (1.1.4)
       activesupport (~> 5.2)
