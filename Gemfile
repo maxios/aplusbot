@@ -5,7 +5,6 @@ gem 'stealth-facebook', path: '/home/maxios/repo/stealth-facebook'
 gem 'activerecord', '~> 5.2'
 
 gem 'railties', '~> 5.2'
-gem 'activerecord', '~> 5.2'
 gem 'uniqueness', '~> 1.1.0'
 # Use sqlite3 as the database for Active Record
 
