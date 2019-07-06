@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_07_06_101801) do
     t.string "student_id"
     t.string "name"
     t.string "type"
+    t.index ["fb_id"], name: "index_users_on_fb_id", unique: true
     t.index ["type"], name: "index_users_on_type"
   end
 

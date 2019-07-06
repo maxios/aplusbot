@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/maxios/stealth-facebook.git
-  revision: fee6833c6a500b0c630fc29a0be6eb23e74c82ce
+  revision: 6edb16db77d7adb41d196f55de5411d957d6eb47
   branch: master
   specs:
     stealth-facebook (0.13.1)
