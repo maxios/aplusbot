@@ -1,0 +1,23 @@
+- reply_type: list
+  top_element_style: compact
+  elements:
+    - title: My App
+      subtitle: Download our app below or visit our website for more info.
+      image_url: "https://my-app.com/app-image.png"
+      default_action:
+        - type: url
+          url: "https://www.google.com"
+          title: 'hello'
+          text: 'View'
+          webview_height_ratio: 'tall'
+
+    - title: hello
+      subtitle: Download our app below or visit our website for more info.
+      image_url: "https://my-app.com/app-image.png"
+      default_action:
+        - type: url
+          url: "https://sleepy-dusk-92280.herokuapp.com/lists/new"
+          title: 'view'
+          text: 'view'
+          webview_height_ratio : 'tall'
+          messenger_extensions: true

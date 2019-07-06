@@ -1,7 +1,7 @@
 default: &default
   facebook:
     verify_token: maxios
-    page_access_token: EAAEX0KB6DVcBABA3kpWikooq3P9YfcxzZCSXKH7xmnkZCwzZCUFAcdBseiP1pwu6IYeZBS4ZAlznJkGyMdw4w7ppncaDfeMVsOepcSJRluHoZCBADTlhEt5FDAZCzfHkkGVIZAnLFnims4WZC6t1X43onkOa98ZA3Xg8JbPRHNiEVg3gZDZD
+    page_access_token: EAAEX0KB6DVcBAA1Arv8NGeB7vvsVJONYgv0JQW60Cl6sSeZCg7kpIXe0ufGVdxlu2EPjNN8oYadSZBZBrK09JtBnCEB0ZBvir6443E9FZBSvn8ZBjGMmMQMpK7cgMmZBepMSHZApfTn5VhM6jrv6E8dGR8M8qP74LfeKMjKa2nKspwZDZD
     setup:
       greeting: # Greetings are broken up by locale
         - locale: default

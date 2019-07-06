@@ -3,7 +3,12 @@ class FlowMap
   include Stealth::Flow
 
   flow :hello do
-    state :say_hello
+    state :say_intro
+  end
+
+  flow :profile do
+    state :ask_for_id
+    state :get_id
   end
 
   flow :goodbye do
