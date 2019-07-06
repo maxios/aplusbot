@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2019_07_06_101801) do
 
   create_table "users", force: :cascade do |t|
     t.string "uid"
+    t.bigint "fb_id"
     t.string "student_id"
     t.string "name"
     t.string "type"

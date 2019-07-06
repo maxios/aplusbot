@@ -16,7 +16,7 @@ class BotController < Stealth::Controller
   end
 
   def current_user
-    @user ||= User.find_or_create_by(uid: current_user_id)
+    @user ||= User.find_or_create_by(fb_id: current_user_id)
   end
 
 end
