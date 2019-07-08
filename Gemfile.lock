@@ -121,6 +121,7 @@ DEPENDENCIES
   foreman
   pg
   railties (~> 5.2)
+  sidekiq
   stealth!
   stealth-facebook!
   uniqueness (~> 1.1.0)
