@@ -121,7 +121,6 @@ DEPENDENCIES
   foreman
   pg
   railties (~> 5.2)
-  redis
   sidekiq
   stealth!
   stealth-facebook!
