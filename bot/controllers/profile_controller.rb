@@ -6,7 +6,7 @@ class ProfilesController < BotController
   end
 
   def get_id
-    User.create_with(student_id: message).find_or_initialize_by(uid: current_user_id)
+    current_user.update!(student_id: message)
     send_replies
   end
 end
