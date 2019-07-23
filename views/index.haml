@@ -1,0 +1,26 @@
+%body
+  %div#content
+  %div#psid
+    hello haml world !
+    %ul
+      - Course.all.each do |course|
+        %li= course.name
+
+  %script{:type => 'text/javascript', :src => '/index.js'}
+  :javascript
+    window.extAsyncInit = function() {
+      MessengerExtensions.getContext(
+        '307659789700439',
+        function success(context) {
+          window.el(context)
+        }, function error(err) {
+          console.log('error')
+        });
+    };
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'Messenger'));

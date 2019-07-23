@@ -1,5 +1,4 @@
 default: &default
-  extension_url: https://aplus-extension.herokuapp.com
   facebook:
     verify_token: maxios
     page_access_token: EAAEX0KB6DVcBAA1Arv8NGeB7vvsVJONYgv0JQW60Cl6sSeZCg7kpIXe0ufGVdxlu2EPjNN8oYadSZBZBrK09JtBnCEB0ZBvir6443E9FZBSvn8ZBjGMmMQMpK7cgMmZBepMSHZApfTn5VhM6jrv6E8dGR8M8qP74LfeKMjKa2nKspwZDZD

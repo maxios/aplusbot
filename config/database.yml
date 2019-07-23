@@ -12,7 +12,6 @@ default: &default
   username: 'maxios'
   password: 'khalidmaxios??'
 
-
 development:
   <<: *default
   database: 'aplus_development'
