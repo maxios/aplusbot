@@ -1,20 +1,16 @@
 %body
   %div#content
-  %div#psid
-    hello haml world !
-    %ul
-      - Course.all.each do |course|
-        %li= course.name
-
-  %script{:type => 'text/javascript', :src => '/index.js'}
+    helloooooooo
+  %script{:type => 'text/javascript', :src => '/bundle.js'}
   :javascript
     window.extAsyncInit = function() {
       MessengerExtensions.getContext(
         '307659789700439',
         function success(context) {
-          window.el(context)
+          const payload = '#{@payload}'
+          window.data = {context: context, payload: JSON.parse(payload)}
         }, function error(err) {
-          console.log('error')
+          console.log('error', err)
         });
     };
     (function(d, s, id){
