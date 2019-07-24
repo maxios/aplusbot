@@ -4,4 +4,5 @@ class User < ActiveRecord::Base
   belongs_to :institution
   has_many :courses
   has_many :answers
+  has_many :attendables, dependent: :destroy
 end
