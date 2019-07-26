@@ -1,20 +1,16 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
-import Courses from './src/components/container/courses.jsx';
+import Courses from 'Container/courses/index.jsx';
 
-const renderRoutes = props => {
-  alert(window.location.href)
+const Routes = props => {
   return (
-    <Switch>
-      <Route exact path="/courses/subscriptions" component={Courses}/>
-    </Switch>
+    <Router>
+      <Route
+        path="/courses/subscriptions"
+        render={() => <Courses {...props} />}
+      />
+    </Router>
   )
-};
-
-const router = props => (
-  <Router>
-    <Route render={renderRoutes}/>
-  </Router>
-)
-export default ;
+}
+export default Routes;

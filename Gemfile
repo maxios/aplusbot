@@ -8,7 +8,6 @@ gem 'sinatra-contrib'
 gem 'railties', '~> 5.2'
 gem 'uniqueness', '~> 1.1.0'
 gem 'sidekiq'
-# Use sqlite3 as the database for Active Record
 
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -19,3 +18,5 @@ gem 'foreman'
 gem 'byebug'
 
 gem "haml", "~> 5.1"
+
+gem "sinatra-cors", "~> 1.1"

@@ -1,24 +1,45 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
+import CourseItem from 'Presentational/courses/course_item.jsx';
+import CourseService from 'Api/course.js'
+import * as R from 'ramda';
 
 class Courses extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      seo_title: ""
-    };
-    this.handleChange = this.handleChange.bind(this);
+  state = {
+    user_courses: [],
+    loaded: false
   }
 
-  handleChange(event) {
-    this.setState({ [event.target.id]: event.target.value });
+  componentWillMount() {
+    CourseService.get_by_user(this.props.context.psid)
+      .then(response => {
+        this.setState({user_courses: response, loaded: true})
+      })
   }
 
   render() {
+    const {loaded, user_courses} = this.state;
+    const {data} = this.props;
+
     return (
-      <h1> hello world </h1>
+      <ul>
+        {
+          loaded && R.map(course => (
+            <CourseItem
+              data={course}
+              subscribed={R.find(R.propEq('name', course.name))(user_courses)}
+            />
+          ))(data.courses)
+        }
+      </ul>
     );
   }
 }
+
+Courses.propTypes = {
+  data: PropTypes.object.isRequired,
+  context: PropTypes.object.isRequired
+}
+
 export default Courses;
 

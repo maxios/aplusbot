@@ -9,17 +9,19 @@ module.exports = {
   resolve: {
     alias: {
       Container: path.resolve(__dirname, 'src/components/container'),
-      Presentational: path.resolve(__dirname, 'src/components/presentational')
+      Presentational: path.resolve(__dirname, 'src/components/presentational'),
+      Styles: path.resolve(__dirname, 'src/styles'),
+      Helper: path.resolve(__dirname, 'src/helpers'),
+      Api: path.resolve(__dirname, 'src/api')
     }
   },
   module: {
     rules: [
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        use: 'babel-loader'
       }
     ]
   }

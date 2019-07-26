@@ -27,6 +27,7 @@ default: &default
 production:
   <<: *default
 development:
+  host: 'https://b1deac3d.ngrok.io'
   <<: *default
 test:
   <<: *default

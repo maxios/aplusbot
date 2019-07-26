@@ -1,6 +1,12 @@
 import React from 'react'
 import ReactDOM from "react-dom";
 import Courses from 'Container/courses/index.jsx';
+import Router from './routes.js';
+
+// styles
+import './src/styles/index.css'
+import 'weui';
+import 'react-weui/build/packages/react-weui.css';
 
 window.extAsyncInit = function() {
   MessengerExtensions.getContext(
@@ -8,7 +14,7 @@ window.extAsyncInit = function() {
     function success(context) {
       const wrapper = document.getElementById('app')
 
-      wrapper ? ReactDOM.render(<Courses />, wrapper) : false
+      wrapper ? ReactDOM.render(<Router context={context} data={window.data}/>, wrapper) : false
     },
     function error(err) {
       const wrapper = document.getElementById("app");
